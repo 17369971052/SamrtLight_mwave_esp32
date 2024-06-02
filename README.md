@@ -1,3 +1,6 @@
+
+舵机需要接VIN引脚以确保电压！
+
 <h1 align="center" >ESP32-简单人体感应开发</h1>
 
 <div align="center">

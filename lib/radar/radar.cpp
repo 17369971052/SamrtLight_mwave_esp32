@@ -1,12 +1,12 @@
 #include "radar.h"
 
-#define radar 4
+#define radar_pin 4
 
 //根据高低电平输入返回人体检测数据
 int getdata(void)
 {
-  int r=2;
-  int val = digitalRead(4);
+  int r=0;
+  int val = digitalRead(radar_pin);
   if(val==LOW)
   {
     r = 0;
@@ -29,7 +29,7 @@ int getresp(void)
     sum += getdata();
     delay(20);
   }
-  printf("sum=%d",sum);
+  //printf("sum=%d",sum);
   if(sum == 5)
   {
     res = 1;

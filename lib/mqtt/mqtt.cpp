@@ -1,3 +1,4 @@
+
 /**
  * @file mqtt.cpp
  * @brief 这个文件包含了MQTT客户端的实现。
@@ -23,9 +24,9 @@ const char *password = "56771231";                                              
 const char *mqttServer = "fcb55bf98b.st1.iotda-device.cn-north-4.myhuaweicloud.com"; // 在华为云IoT的 总览->接入信息->MQTT（1883）后面的网址
 const int mqttPort = 1883;
 // 以下3个参数可以由HMACSHA256算法生成，为硬件通过MQTT协议接入华为云IoT平台的鉴权依据
-const char *clientId = "6659d8d26bc31504f06cc3c3_mwaveradar_0_1_2024060208";
+const char *clientId = "6659d8d26bc31504f06cc3c3_mwaveradar_0_0_2024061004";
 const char *mqttUser = "6659d8d26bc31504f06cc3c3_mwaveradar";
-const char *mqttPassword = "46b60828cb1f3ef8637500987bcf8350b6d466b851e7fb70adc40c3837c52ffb";
+const char *mqttPassword = "cf835d6589d23667d2eb262e1c939b4d532c3199efe095f219a2ee905354f457";
 
 // 华为云IoT的产品->查看->Topic管理->设备上报属性数据的 $oc/devices/{你的设备ID}/sys/properties/report
 const char *topic_properties_report = "$oc/devices/6659d8d26bc31504f06cc3c3_mwaveradar/sys/properties/report";

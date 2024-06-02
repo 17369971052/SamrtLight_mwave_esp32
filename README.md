@@ -14,11 +14,11 @@
 - [插件: PlatformIO IDE](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
 - 开发板：ESP-wroom-32
 
-    ![local](ESP32_pin.jpg) 
+    ![esp32_pic](ESP32_pin.jpg) 
     see [ESP32学习文档](https://lceda001.feishu.cn/wiki/RpCAw65FsiHfKSkFVV6ckdPjnlf)
 - 硬件：HLK-LD2410B人体存在感应模组
 
-    ![local](HLK-LD2410B.jpg) 
+    ![LD2401B_pic](LD2410B.png) 
     see [说明书](/HLK%20LD2410B生命存在感应模组说明书%20V1.07.pdf)
 
 

@@ -37,7 +37,9 @@ void light_control(int r)
       if(sta == LIGHT_ON_SATUS)
       {
         light_turn_off();
-        printf("Light OFF!");
+        printf("\n");
+        printf("Light OFF!\n");
+        printf("\n");
       }
       sta = LIGHT_OFF_SATUS;
       delay(10);
@@ -47,7 +49,9 @@ void light_control(int r)
       if(sta == LIGHT_OFF_SATUS)
       {
         light_turn_on();
-        printf("Light ON!");
+        printf("\n");
+        printf("Light ON!\n");
+        printf("\n");
       }
       sta=LIGHT_ON_SATUS;
       delay(10);

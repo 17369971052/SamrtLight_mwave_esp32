@@ -1,6 +1,3 @@
-
-舵机需要接VIN引脚以确保电压！
-
 <h1 align="center" >ESP32-简单人体感应开发</h1>
 
 <div align="center">
@@ -61,6 +58,9 @@ git clone https://github.com/yourusername/yourrepository.git
 
 ### [2. radar库](./lib/radar)
 > 功能：封装读取毫米波雷达数据。
+
+### 3. 硬件
+> 舵机需要接VIN引脚以确保电压！
 
 
 ## 贡献

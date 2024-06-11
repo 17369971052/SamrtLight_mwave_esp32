@@ -15,7 +15,7 @@
 #include <ArduinoJson.h>
 
 // #include "radar.h"
-
+#define delay_time 6000   //数据下发后延迟
 
 extern const char *ssid;
 extern const char *password;
@@ -36,3 +36,7 @@ void sendMQTTMessage(const char *topic, const char *message);
 
 // 上报设备的属性值，参数包括服务ID，属性名数组，属性值数组和数组大小
 void reportDeviceValues(const char *service_id, const char **properties, int *values, int size);
+
+void executeLedControlCommand(const JsonObject &paras);
+void mqttMessageCallback(char *topic, byte *payload, unsigned int length);
+void subscribeToCommandTopic();

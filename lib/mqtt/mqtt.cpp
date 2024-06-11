@@ -275,17 +275,14 @@ void mqttMessageCallback(char *topic, byte *payload, unsigned int length)
             return;
         }
 
-        // 检查"command_name"字段是否为"led_ctr"
+        // 检查"command_name"字段是否为"led"
         const char *command_name = doc["command_name"];
-        if (strcmp(command_name, "led_ctr") == 0)
+        if (strcmp(command_name, "light") == 0)
         {
             JsonObject paras = doc["paras"].as<JsonObject>(); // 获取"paras"字段
-            executeLedControlCommand(paras);                  // 执行led_ctr命令
+            executeLedControlCommand(paras);                  // 执行led命令
         }
-
-
         
-
         printMessage("请求ID: ", request_id); // 打印请求ID
 
         // 创建响应消息
@@ -296,7 +293,7 @@ void mqttMessageCallback(char *topic, byte *payload, unsigned int length)
 
         char topic_commands_response[200]; // 定义一个数组，用于存储命令应答主题
         // 使用snprintf函数，将格式化的字符串写入topic_commands_response
-        snprintf(topic_commands_response, sizeof(topic_commands_response), "$oc/devices/6609494b71d845632a033b20_0331/sys/commands/response/request_id=%s", request_id);
+        snprintf(topic_commands_response, sizeof(topic_commands_response), "$oc/devices/6659d8d26bc31504f06cc3c3_mwaveradar/sys/commands/response/request_id=%s", request_id);
         publishResponse(topic_commands_response, response); // 发布响应
     }
 }
@@ -310,26 +307,16 @@ void mqttMessageCallback(char *topic, byte *payload, unsigned int length)
  */
 void executeLedControlCommand(const JsonObject &paras)
 {
-    int value = paras["value"]; // 从"paras"字段中获取"value"字段，将其解析为一个整数
+    int value = paras["light"]; // 从"paras"字段中获取"light"字段，将其解析为一个整数
+    printf("--------------**%d**--------------\n",value);
     if (value)
     {
         light_control(1);  //开灯
+        delay(delay_time);
     }
     else
     {
         light_control(0);  //关灯
+        delay(delay_time);
     }
-}
-
-
-void executeServoControlCommand(const JsonObject &paras)
-{
-
-
-
-
-
-
-
-
 }

@@ -20,8 +20,8 @@
 
 /*MQTT连接配置*/
 /*-----------------------------------------------------*/
-const char *ssid = "HUAWEI nova 5z";                                                            // 接入wifi的名字
-const char *password = "56771231";                                                   // 接入wifi的密码
+const char *ssid = "Young's Pura 70 Pro";                                                            // 接入wifi的名字
+const char *password = "0987654321";                                                   // 接入wifi的密码
 const char *mqttServer = "fcb55bf98b.st1.iotda-device.cn-north-4.myhuaweicloud.com"; // 在华为云IoT的 总览->接入信息->MQTT（1883）后面的网址
 const int mqttPort = 1883;
 // 以下3个参数可以由HMACSHA256算法生成，为硬件通过MQTT协议接入华为云IoT平台的鉴权依据

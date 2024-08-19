@@ -12,8 +12,8 @@ int movingAverage(void) {
     if (currentIndex < WINDOW_SIZE) 
     {
         return currentIndex ? sum / currentIndex : sensorValues[0];
-    } 
-    else 
+    }
+    else
     {
         // 移除最早的一个值，加入新的值，然后计算平均
         sum -= sensorValues[currentIndex % WINDOW_SIZE]; // 移除旧值

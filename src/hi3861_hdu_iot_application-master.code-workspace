@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"path": "D:/hi3861_hdu_iot_application-master"
+		},
+		{
+			"name": "InfraredControl_demo",
+			"path": "../../InfraredControl_demo"
+		},
+		{
+			"name": "LD2410B_demo",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"debug.onTaskErrors": "debugAnyway",
+		"files.associations": {
+			"any": "c",
+			"cmsis_os2.h": "c",
+			"iot_uart.h": "c",
+			"iot_gpio_ex.h": "c",
+			"ohos_init.h": "c",
+			"iot_gpio.h": "c",
+			"unistd.h": "c",
+			"stdio.h": "c",
+			"iot_errno.h": "c",
+			"iot_adc.h": "c",
+			"array": "c",
+			"string": "c",
+			"string.h": "c",
+			"hi_pwm.h": "c",
+			"hi_time.h": "c",
+			"hi_io.h": "c",
+			"dtls_al.h": "c",
+			"mqtt_al.h": "c",
+			"oc_mqtt_profile.h": "c",
+			"oc_mqtt_al.h": "c",
+			"e53_ia1.h": "c",
+			"cjson.h": "c",
+			"wifi_connect.h": "c",
+			"stdlib.h": "c",
+			"sg90_servo.h": "c",
+			"hi_uart.h": "c"
+		}
+	}
+}

@@ -23,7 +23,7 @@ void loop()
     const char *properties[] = {"resp"};
     reportDeviceValues("mwaveradar", properties, values, sizeof(values) / sizeof(values[0]));
     printf("report  success ! \n");
-    delay(500);
+    delay(3000);
     light_control(resp);
     printf("control  success ! ");
 }
